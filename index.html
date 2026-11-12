@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>山野小馆 · 一灶烟火，当季而食</title>
+  <meta name="description" content="山野小馆，一间做当季家常味的小馆。小份现做，每日鲜采，不做预制。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home" aria-label="山野小馆 首页">
+        <span class="brand-mark" aria-hidden="true">山</span>
+        <span class="brand-text">
+          <strong>山野小馆</strong>
+          <small>SHANYE BISTRO</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="主导航">
+        <a href="#home">首页</a>
+        <a href="#menu">菜单</a>
+        <a href="#hours">营业时间</a>
+        <a href="#address">地址</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+
+      <a class="header-call" href="tel:02100000000">电话订座</a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="打开导航菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 首屏 -->
+    <section class="hero" id="home">
+      <div class="hero-media">
+        <img src="assets/hero-interior.jpg" alt="山野小馆内景：暖光下的木质餐桌与陶碗" fetchpriority="high">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="wrap hero-inner">
+        <p class="eyebrow">SEASONAL KITCHEN · 当季小馆</p>
+        <h1>山野小馆</h1>
+        <p class="hero-lead">一灶烟火，当季而食。<br>小份现做，把家常味做得讲究一点。</p>
+
+        <div class="hero-meta">
+          <span class="status-chip" id="heroStatus" data-state="open">
+            <i class="dot" aria-hidden="true"></i>
+            <span class="status-text">营业时间 11:00 – 21:30</span>
+          </span>
+          <span class="hero-hours">周二至周日 · 周一店休</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">看看菜单</a>
+          <a class="btn btn-ghost" href="tel:02100000000">电话订座 021-0000 0000</a>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#menu" aria-label="向下浏览菜单">
+        <span class="scroll-hint-line" aria-hidden="true"></span>
+        向下浏览
+      </a>
+    </section>
+
+    <!-- 菜单 -->
+    <section class="menu section" id="menu">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">MENU · 菜单</p>
+            <h2>今天，想吃点什么？</h2>
+          </div>
+          <p class="section-note">菜单随季节调整，以店内当日供应为准。</p>
+        </header>
+
+        <div class="menu-cat reveal">
+          <div class="cat-head">
+            <span class="cat-index">01</span>
+            <h3>招牌菜</h3>
+            <span class="cat-note">炭火与慢炖</span>
+          </div>
+          <div class="dish-grid">
+            <article class="dish">
+              <div class="dish-top">
+                <h4>山椒脆皮鸡</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥68</span>
+              </div>
+              <p class="dish-desc">外皮现炸酥脆，山椒清香带一点麻，蘸自熬酱汁最好吃。</p>
+              <span class="dish-tag">招牌</span>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>慢炖牛腩煲</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥88</span>
+              </div>
+              <p class="dish-desc">小火四小时，牛腩软而不散，汤汁拌饭一绝。</p>
+              <span class="dish-tag">每日限量</span>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>炭火烤时蔬</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥42</span>
+              </div>
+              <p class="dish-desc">当季蔬菜炭火直烤，只撒海盐与初榨橄榄油。</p>
+              <span class="dish-tag">素食</span>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>手打虾滑蒸豆腐</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥56</span>
+              </div>
+              <p class="dish-desc">现打虾滑铺在嫩豆腐上，清鲜不腻，老人小孩都合适。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-cat reveal">
+          <div class="cat-head">
+            <span class="cat-index">02</span>
+            <h3>主食</h3>
+            <span class="cat-note">一锅一饭</span>
+          </div>
+          <div class="dish-grid">
+            <article class="dish">
+              <div class="dish-top">
+                <h4>腊味煲仔饭</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥48</span>
+              </div>
+              <p class="dish-desc">广式腊肠与腊肉，锅巴焦香，上桌现淋豉油。</p>
+              <span class="dish-tag">招牌</span>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>葱油拌面</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥26</span>
+              </div>
+              <p class="dish-desc">现熬葱油，面条筋道，简单但很上头。</p>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>松茸鸡汤面</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥38</span>
+              </div>
+              <p class="dish-desc">老母鸡与松茸吊汤八小时，清甜温润。</p>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>五谷杂粮饭</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥12</span>
+              </div>
+              <p class="dish-desc">糙米、藜麦与小豆同煮，清淡好消化。</p>
+              <span class="dish-tag">素食</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-cat reveal">
+          <div class="cat-head">
+            <span class="cat-index">03</span>
+            <h3>饮品</h3>
+            <span class="cat-note">冷泡与手作</span>
+          </div>
+          <div class="dish-grid">
+            <article class="dish">
+              <div class="dish-top">
+                <h4>桂花酸梅汤</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥16</span>
+              </div>
+              <p class="dish-desc">乌梅山楂现煮，桂花增香，冰镇更解腻。</p>
+              <span class="dish-tag">招牌</span>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>冷泡单丛</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥18</span>
+              </div>
+              <p class="dish-desc">凤凰单丛冷泡六小时，清香回甘，不加糖。</p>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>手冲美式</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥22</span>
+              </div>
+              <p class="dish-desc">中深烘豆，坚果与黑巧风味，饭后来一杯。</p>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>陈皮红豆沙</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥20</span>
+              </div>
+              <p class="dish-desc">十年陈皮配红豆慢熬，微甜绵密，冷热皆可。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-cat reveal">
+          <div class="cat-head">
+            <span class="cat-index">04</span>
+            <h3>小食</h3>
+            <span class="cat-note">等餐也不闲着</span>
+          </div>
+          <div class="dish-grid">
+            <article class="dish">
+              <div class="dish-top">
+                <h4>椒盐小酥肉</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥32</span>
+              </div>
+              <p class="dish-desc">现炸现撒椒盐，外酥里嫩，趁热吃。</p>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>蒜香毛豆</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥18</span>
+              </div>
+              <p class="dish-desc">蒜末与花椒凉拌，配一杯酸梅汤刚好。</p>
+              <span class="dish-tag">素食</span>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>手撕包菜</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥22</span>
+              </div>
+              <p class="dish-desc">干锅快炒，锅气十足，微微带辣。</p>
+              <span class="dish-tag">微辣</span>
+            </article>
+
+            <article class="dish">
+              <div class="dish-top">
+                <h4>秘制卤蛋</h4>
+                <span class="dish-dots" aria-hidden="true"></span>
+                <span class="dish-price">¥8</span>
+              </div>
+              <p class="dish-desc">卤汁浸泡一夜，蛋香入味，配面配饭都合适。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 图片引语 -->
+    <section class="quote-band" aria-label="主理人的话">
+      <img src="assets/chef-plating.jpg" alt="厨师在木质操作台上为当季蔬菜装盘" loading="lazy">
+      <div class="quote-overlay" aria-hidden="true"></div>
+      <figure class="wrap quote-inner">
+        <blockquote>
+          <p>食材当天采买，卖完就收工。<br>不追求多，只把每一道做稳。</p>
+        </blockquote>
+        <figcaption>— 主理人 阿山</figcaption>
+      </figure>
+    </section>
+
+    <!-- 营业时间与地址 -->
+    <section class="visit section" id="hours">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">VISIT · 到店</p>
+            <h2>挑个时间，来坐坐</h2>
+          </div>
+          <p class="section-note">四人以下可直接到店，六人以上建议提前一天电话预约。</p>
+        </header>
+
+        <div class="visit-grid">
+          <div class="visit-card hours-card reveal">
+            <p class="card-label">营业时间</p>
+            <ul class="hours-list">
+              <li>
+                <span class="hours-day">周二 – 周日</span>
+                <span class="hours-time">11:00 – 14:30</span>
+              </li>
+              <li>
+                <span class="hours-day">晚市</span>
+                <span class="hours-time">17:00 – 21:30</span>
+              </li>
+              <li>
+                <span class="hours-day">周一</span>
+                <span class="hours-time is-off">店休</span>
+              </li>
+            </ul>
+            <p class="hours-note">午市最后点单 14:00，晚市最后点单 21:00。</p>
+            <p class="status-line" id="openStatus" data-state="open">
+              <i class="dot" aria-hidden="true"></i>
+              <span class="status-text">正在确认营业状态…</span>
+            </p>
+          </div>
+
+          <div class="visit-card address-card reveal" id="address">
+            <div class="address-media">
+              <img src="assets/table-detail.jpg" alt="山野小馆的餐桌：冒着热气的陶碗与木质桌面" loading="lazy">
+            </div>
+            <div class="address-body">
+              <p class="card-label">地址与联系</p>
+              <dl class="address-list">
+                <div>
+                  <dt>门店地址</dt>
+                  <dd>上海市静安区示例路 88 号 一层（近示例地铁站 2 号口）</dd>
+                </div>
+                <div>
+                  <dt>订座电话</dt>
+                  <dd><a href="tel:02100000000">021-0000 0000</a></dd>
+                </div>
+                <div>
+                  <dt>交通提示</dt>
+                  <dd>园区地下停车场可停车，地铁 2 号口步行约 5 分钟。</dd>
+                </div>
+              </dl>
+              <div class="address-actions">
+                <a class="btn btn-primary" href="tel:02100000000">拨打电话</a>
+                <button class="btn btn-outline" id="copyAddress" type="button" data-address="上海市静安区示例路 88 号 一层">复制地址</button>
+              </div>
+              <p class="demo-note">以上为演示信息，正式上线前请替换为真实门店资料。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="wrap faq-wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">FAQ · 常见问题</p>
+            <h2>到店前，你可能想知道</h2>
+          </div>
+        </header>
+
+        <div class="faq-list reveal">
+          <details class="faq-item" open>
+            <summary>
+              <span>需要提前预约吗？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>四人以下可直接到店，高峰时段可能需要等位；六人以上建议提前一天电话预约，我们会为你留好位置。</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>有素食或不辣的菜吗？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>有的。炭火烤时蔬、五谷杂粮饭、蒜香毛豆等都是素食；点单时告知忌口，厨房可以调整辣度与咸淡。</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>可以带孩子或带宠物吗？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>当然可以。店内备有儿童餐具与宝宝椅，室外座位欢迎携带宠物，进店后请牵好绳。</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>停车和交通方便吗？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>园区地下停车场可停车，消费满额可减免两小时；地铁 2 号口出来步行约 5 分钟即可到店。</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap footer-inner">
+      <div class="footer-top">
+        <a class="footer-brand" href="#home">
+          <span class="footer-mark" aria-hidden="true">山</span>
+          <span>
+            <strong>山野小馆</strong>
+            <small>SHANYE BISTRO</small>
+          </span>
+        </a>
+        <nav class="footer-nav" aria-label="页脚导航">
+          <a href="#menu">菜单</a>
+          <a href="#hours">营业时间</a>
+          <a href="#address">地址</a>
+          <a href="#faq">常见问题</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-contact">订座 021-0000 0000 · 上海市静安区示例路 88 号</p>
+        <p class="footer-copy">© 2026 山野小馆 · 保留所有权利（演示页面，信息均为示例）</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

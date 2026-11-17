@@ -16,6 +16,61 @@
   --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
+/* ========== 演示提示条 ========== */
+.demo-bar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 9px 46px;
+  background: var(--ink);
+  color: var(--cream);
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.demo-bar button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.demo-bar button:hover,
+.demo-bar button:focus-visible {
+  opacity: 1;
+}
+
+.demo-bar.is-hidden {
+  display: none;
+}
+
+html.has-demo {
+  scroll-padding-top: calc(92px + var(--demo-h, 44px));
+}
+
+html.has-demo .site-header {
+  top: var(--demo-h, 44px);
+}
+
+html.has-demo .hero {
+  padding-top: calc(130px + var(--demo-h, 44px));
+}
+
 *,
 *::before,
 *::after {
@@ -1119,6 +1174,15 @@ body.nav-open .site-header {
   .hero {
     min-height: 620px;
     padding-top: 110px;
+  }
+
+  html.has-demo .hero {
+    padding-top: calc(110px + var(--demo-h, 44px));
+  }
+
+  .demo-bar {
+    padding: 8px 40px 8px 14px;
+    font-size: 12px;
   }
 
   .hero-lead br {

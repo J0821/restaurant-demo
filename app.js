@@ -1,6 +1,26 @@
 (function () {
   "use strict";
 
+  /* ---------- 演示提示条 ---------- */
+  var demoBar = document.getElementById("demoBar");
+  var demoBarClose = document.getElementById("demoBarClose");
+
+  function syncDemoHeight() {
+    if (!demoBar || demoBar.classList.contains("is-hidden")) return;
+    document.documentElement.style.setProperty("--demo-h", demoBar.offsetHeight + "px");
+  }
+
+  if (demoBar && demoBarClose) {
+    document.documentElement.classList.add("has-demo");
+    syncDemoHeight();
+    window.addEventListener("resize", syncDemoHeight, { passive: true });
+
+    demoBarClose.addEventListener("click", function () {
+      document.documentElement.classList.remove("has-demo");
+      demoBar.classList.add("is-hidden");
+    });
+  }
+
   /* ---------- 顶部导航：滚动变色 ---------- */
   var header = document.getElementById("siteHeader");
 

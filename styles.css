@@ -557,7 +557,7 @@ body.nav-open .site-header {
 
 /* ========== 菜单 ========== */
 .menu {
-  background: var(--cream);
+  background: #fbf0df;
 }
 
 .menu-cat + .menu-cat {
@@ -575,9 +575,10 @@ body.nav-open .site-header {
 
 .cat-index {
   padding: 3px 8px;
-  border: 1px solid rgba(180, 83, 47, 0.35);
+  border: 1px solid #c2381b;
   border-radius: 6px;
-  color: var(--clay);
+  background: #c2381b;
+  color: #fff8f0;
   font-family: var(--font-display);
   font-size: 12px;
   letter-spacing: 0.08em;
@@ -592,7 +593,7 @@ body.nav-open .site-header {
 
 .cat-note {
   margin-left: auto;
-  color: var(--ink-soft);
+  color: #8a6a4c;
   font-size: 12.5px;
   letter-spacing: 0.1em;
 }
@@ -607,15 +608,16 @@ body.nav-open .site-header {
   display: flex;
   flex-direction: column;
   padding: 21px 23px 19px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(166, 96, 58, 0.16);
   border-radius: 14px;
-  background: rgba(255, 253, 248, 0.55);
+  background: #fffdf9;
+  box-shadow: 0 10px 22px -18px rgba(90, 40, 20, 0.55);
   transition: transform 0.28s ease, background 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
 }
 
 .dish:hover {
-  border-color: rgba(180, 83, 47, 0.3);
-  background: var(--paper);
+  border-color: rgba(194, 56, 27, 0.32);
+  background: #fffefb;
   box-shadow: 0 22px 40px -32px rgba(38, 32, 27, 0.6);
   transform: translateY(-3px);
 }
@@ -635,21 +637,22 @@ body.nav-open .site-header {
 .dish-dots {
   flex: 1;
   min-width: 18px;
-  border-bottom: 1px dotted rgba(38, 32, 27, 0.3);
+  border-bottom: 1px dotted rgba(120, 80, 50, 0.35);
   transform: translateY(-4px);
 }
 
 .dish-price {
-  color: var(--clay);
+  color: #c2381b;
   font-family: var(--font-display);
   font-size: 19px;
+  font-weight: 700;
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
 
 .dish-desc {
   margin: 8px 0 13px;
-  color: var(--ink-soft);
+  color: #7a6350;
   font-size: 13.5px;
   line-height: 1.75;
 }
@@ -658,9 +661,10 @@ body.nav-open .site-header {
   align-self: flex-start;
   margin-top: auto;
   padding: 3px 10px;
-  border: 1px solid rgba(180, 83, 47, 0.3);
+  border: 1px solid #f0bfa9;
   border-radius: 999px;
-  color: var(--clay);
+  background: #fbe3d6;
+  color: #b0361a;
   font-size: 10.5px;
   letter-spacing: 0.14em;
 }
